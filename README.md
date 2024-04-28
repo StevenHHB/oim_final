@@ -32,7 +32,7 @@ The application's structure:
 - `/requirements.txt`: Project dependencies.
 
 ## Collaboration Information
-Project completed by Steven Huang, handling all planning, development, testing, and documentation.
+Project completed by Steven Huang and Peter Li, handling all planning, development, testing, and documentation.
 
 ## Acknowledgments
 Thanks to the Flask framework, Hugging Face's transformers for sentiment analysis, and FullCalendar for event visualization.
