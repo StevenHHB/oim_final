@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href='https://unpkg.com/fullcalendar@5/main.min.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Welcome to the Mood Tracker!</h1>
+        <form action="/" method="post" class="mood-form">
+            <div class="input-group">
+                <label for="text">How was your day?</label>
+                <input type="text" id="text" name="text" required>
+                <button type="submit" class="analyze-btn">Analyze</button>
+            </div>
+        </form>
+        <div id='calendar' class="calendar"></div>
+        <div id="event-detail-box">
+            <span id="close-detail-box">&times;</span>
+            <div class="title"></div>
+            <div class="score"></div>
+        </div>
+    </div>
+    <script src='https://unpkg.com/fullcalendar@5/main.min.js'></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

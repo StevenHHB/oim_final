@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS entries;
+CREATE TABLE entries (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    text TEXT NOT NULL,
+    sentiment TEXT NOT NULL,
+    score FLOAT NOT NULL,
+    date TEXT NOT NULL
+);
